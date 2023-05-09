@@ -13,6 +13,22 @@ const reverseString = (string) => {
   return string.split("").reverse().join("")
 }
 
-module.exports = { stringLength, reverseString }
+class Claculator {
+  add = (a, b) => {
+    return a + b;
+  }
+  substract = (a, b) => {
+    return a - b;
+  }
+  multiply = (a, b) => {
+    return a * b;
+  }
+  divide = (a, b) => {
+    return a / b;
+  }
+}
+const calculator = new Claculator();
+
+module.exports = { stringLength, reverseString, calculator }
 
 

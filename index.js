@@ -29,6 +29,8 @@ class Claculator {
 }
 const calculator = new Claculator();
 
-module.exports = { stringLength, reverseString, calculator }
+const capitalize = (string) => string.charAt(0).toUpperCase()+string.substring(1)
+
+module.exports = { stringLength, reverseString, calculator, capitalize}
 
 

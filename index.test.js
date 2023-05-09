@@ -1,5 +1,5 @@
 const { default: expect } = require('expect')
-const { stringLength, reverseString, calculator } = require('./index.js')
+const { stringLength, reverseString, calculator, capitalize } = require('./index.js')
 const { describe } = require('jest-circus')
 
 it('test1Word', () => {
@@ -65,4 +65,8 @@ describe('division', () => {
   test('divide 5 / 5', () => {
     expect(calculator.divide(5, 5)).toBe(1)
   })
+})
+
+test('Returns first letter capitalized', () =>{
+  expect(capitalize('hello')).toBe('Hello')
 })
